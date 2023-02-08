@@ -1,0 +1,323 @@
+            /*declarar constantes de diseño para las 
+fuentes, colores y recursos*/
+            
+             :root {
+                --textos: 'Lato', sans-serif;
+                --titulos: 'Roboto', sans-serif;
+                --colorFondo: rgb(114, 127, 248);
+                --colorHeader: rgba(41, 36, 36, 0.6);
+                --colorFooter: #000;
+            }
+            /* estilos para el cuerpo (body)
+   se utiliza el selector de etiqueta*/
+            /*configuraciones globales*/
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: var(--textos);
+                font-size: 1.2rem;
+                color: aqua;
+                /*rem representa 12 px*/
+            }
+            
+            h1 {
+                font-family: var(--titulos);
+                font-size: 3.8rem;
+                font-weight: bold;
+                color: rgb(252, 248, 250)
+            }
+            
+            h2,
+            h3,
+            h4 {
+                font-size: 1.8rem;
+                font-family: var(--titulos);
+            }
+            
+            h6 {
+                color: rgb(247, 242, 242);
+                background: white;
+                position: absolute;
+                left: 40px;
+                background-color: rgb(5, 4, 4);
+                height: 20px;
+                padding: 2px;
+                border-radius: 20%;
+            }
+            /*sintaxis para las clases en css es con punto (.)*/
+            
+            .container {
+                width: 25px;
+                margin-left: 10px;
+                padding: 5px 0 5px;
+                border-radius: 250px;
+                box-sizing: content-box;
+                border-bottom-left-radius: 12px 0 12px;
+                border: rgb(241, 235, 235);
+                padding: 1px 0;
+            }
+            
+            .home-wrapper {
+                background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.6)), url('../images/background.jpg') no-repeat center top;
+                background-size: cover;
+                color: #000;
+            }
+            /*header*/
+            
+            header {
+                position: fixed;
+                /*fija el elemento en el html*/
+                width: 100%;
+                background-color: var(--colorHeader);
+                padding: 10px 0;
+            }
+            
+            header img {
+                width: 200px;
+                left: 11px;
+            }
+            
+            header nav {
+                float: right;
+                margin-top: 10px;
+            }
+            
+            header nav a {
+                color: rgb(230, 228, 241);
+                text-decoration: none;
+                margin-left: 10px;
+                font-weight: bold;
+                padding: 10px 15px;
+            }
+            
+            header nav a:hover {
+                color: #0c0b0c;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            
+            header nav a.active {
+                color: rgb(34, 32, 141) !important;
+                /* background-color: #6b066e3f; */
+                border-radius: 3px;
+            }
+            /*home*/
+            /*los identificadores (id) en el html, su sintaxis en css es el numeral (#) */
+            
+            #home {
+                text-align: center;
+                padding: 200px 0 150px;
+            }
+            
+            #home h1 {
+                margin-bottom: 40px;
+                line-height: 1.2;
+            }
+            
+            #home p {
+                font-size: 1.4rem;
+                margin-top: 40px;
+                color: #fff;
+            }
+            
+            #home .divider {
+                width: 250px;
+                margin: 0 auto;
+                border-top: 5px solid #fe4336;
+            }
+            
+            #home .social {
+                margin-top: 80px;
+            }
+            
+            #home .social a {
+                color: var(--colorFondo);
+                display: inline-block;
+                background-color: var(--colorFooter);
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                font-weight: bold;
+                margin-right: 10px;
+                line-height: 50px;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                transition: all .3s;
+            }
+            
+            #home .social a:hover {
+                background-color: #fed136;
+            }
+            
+            #home {
+                text-align: center;
+                padding: 200px 0 150px;
+            }
+            
+            #home h1 {
+                margin-bottom: 40px;
+                line-height: 1.2;
+            }
+            
+            #home p {
+                font-size: 1.4rem;
+                margin-top: 40px;
+                color: #fff;
+            }
+            
+            #home .divider {
+                width: 250px;
+                margin: 0 auto;
+                border-top: 5px solid #fe4336;
+            }
+            
+            #home .social {
+                margin-top: 80px;
+            }
+            
+            #home .social a {
+                color: var(--colorFondo);
+                display: inline-block;
+                background-color: var(--colorFooter);
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                font-weight: bold;
+                margin-right: 10px;
+                line-height: 50px;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                transition: all .3s;
+            }
+            
+            #home .social a:hover {
+                background-color: #fed136;
+            }
+            /*secciones*/
+            
+            section {
+                padding: 80px 0;
+            }
+            
+            p {
+                background-color: #fff;
+                text-align: center;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                border: solid 3px black;
+                border-radius: 25px;
+            }
+            
+            section h2 {
+                text-align: center;
+                font-size: 32px;
+                margin-bottom: 70px;
+            }
+            /*servicios*/
+            
+            #servicios .box {
+                display: inline-block;
+                box-sizing: content-box;
+                background-color: rgb(92, 141, 248);
+                border: solid 7px black;
+            }
+            
+            #servicios .box h3 {
+                text-align: center;
+                margin-top: 10px;
+            }
+            /*Portafolio*/
+            
+            #contantacto.box {
+                display: inline-block;
+                text-align: center;
+                width: 33%;
+                padding: 1%;
+                background-color: wheat;
+            }
+            /* organizacin */
+            
+            #organizacion .box h3 {
+                text-align: center;
+                margin-top: 10px;
+            }
+            
+            .btn-wsp {
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                line-height: 63px;
+                bottom: 25px;
+                right: 300px;
+                background: #25d366;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 35px;
+                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+                z-index: 100;
+                transition: all 300ms ease;
+            }
+            
+            .btn-wsp {
+                width: 63px;
+                height: 63px;
+                line-height: 6px;
+            }
+            
+            img {
+                background-color: #3d4763;
+                border-radius: 33px;
+                border: solid 12px white;
+                padding-left: 2px;
+                align-content: center;
+                border-right-color: aqua;
+                padding-left: 15%;
+                padding-right: 15%;
+                margin-left: 25%;
+                border-bottom: solid 12px rgb(20, 30, 49);
+                border-left-color: rgb(59, 20, 85);
+                border-top: solid 12px rgb(125, 84, 153);
+            }
+            
+            h4 {
+                margin-left: 33px;
+                padding-left: 20px;
+                background-color: rgb(21, 153, 120);
+                border-radius: 70%;
+                border: solid 8px blue;
+                border-bottom: solid 8px black;
+                text-align: center;
+            }
+            
+            p {
+                align-content: center;
+                padding-left: 66px;
+            }
+            
+            h2 {
+                text-align: center;
+                font-size: 32px;
+                margin-bottom: 70px;
+                background-color: blue;
+                color: #000;
+                border: solid 3px black;
+            }
+            
+            h5 {
+                margin: left 33px;
+                background-color: rgb(214, 238, 227);
+                text-align: center;
+                border-radius: 100%;
+                border: solid 9px rgb(29, 59, 29);
+                padding-top: 20px;
+                padding-bottom: 33px;
+                color: rgb(22, 11, 11);
+            }
